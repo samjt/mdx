@@ -98,7 +98,7 @@ function blockHtml(eat, value, silent) {
       next = next === -1 ? length : next
       line = value.slice(index + 1, next)
 
-      if (sequence[1].test(line)) {
+      if (line.length && sequence[1].test(line)) {
         if (line) {
           index = next
         }
